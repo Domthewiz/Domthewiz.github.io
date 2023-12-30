@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<h1>Customer Service Forum</h1>
+<p>Select Your Phone number</p>
+<div>
+<p style="margin: 0; display: inline;">+</p>
+<p style="margin: 0; display: inline;" id="demo">5</p>
+<p style="margin: 0; display: inline;">(</p>
+<p style="margin: 0; display: inline;" id="demo2">125</p>
+<p style="margin: 0; display: inline;">)</p>
+<p style="margin: 0; display: inline;" id="demo3">505</p>
+<p style="margin: 0; display: inline;">-</p>
+<p style="margin: 0; display: inline;" id="demo4">6843</p></div>
+<div class="slidecontainer">
+  <input id="myRange" type="range" min="1" max="99" value="5">
+  <input id="myRange2" type="range" min="0" max="999" value="125">
+  <input id="myRange3" type="range" min="0" max="999" value="505">
+  <input id="myRange4" type="range" min="0" max="9999" value="6043">
+</div>
+<script>
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+var slider2 = document.getElementById("myRange2");
+var output2 = document.getElementById("demo2");
+var slider3 = document.getElementById("myRange3");
+var output3 = document.getElementById("demo3");
+var slider4 = document.getElementById("myRange4");
+var output4 = document.getElementById("demo4");
+output.innerHTML = slider4.value; // Display the default slider value
+slider4.oninput = function() {
+  output4.innerHTML = this.value;
+}
+output.innerHTML = slider3.value; // Display the default slider value
+slider3.oninput = function() {
+  output3.innerHTML = this.value;
+}
+output.innerHTML = slider2.value; // Display the default slider value
+slider2.oninput = function() {
+  output2.innerHTML = this.value;
+}
+output.innerHTML = slider.value; // Display the default slider value
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+</script>
+<br>
+<p>(Created by DomTWyt)</p>
+</body>
+</html>

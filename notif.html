@@ -1,5 +1,28 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Notification API</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-Q3E3XZ7RL7"></script>
-<script>(async () => {
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q3E3XZ7RL7');
+</script>
+
+<link rel="stylesheet" href="chrome-extension://ihcjicgdanjaechkgeegckofjjedodee/app/content-style.css"></head>
+
+<body>
+
+    <div class="container">
+        <h1>JavaScript Notification API Demo</h1>
+        <div class="error"></div>
+    </div>
+
+    <script>
+(async () => {
     // create and show the notification
     const showNotification = () => {
         // create a new notification
@@ -41,6 +64,9 @@
     granted ? showNotification() : showError();
 
 })();
-</script>
 
-<p>testing</p>
+    </script>
+
+
+
+</body></html>

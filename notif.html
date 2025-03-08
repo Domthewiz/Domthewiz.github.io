@@ -13,16 +13,9 @@
 </script>
 
 <link rel="stylesheet" href="chrome-extension://ihcjicgdanjaechkgeegckofjjedodee/app/content-style.css"></head>
-
-<body>
-
-    <div class="container">
-        <h1>JavaScript Notification API Demo</h1>
-        <div class="error"></div>
-    </div>
-
-    <script>
-(async () => {
+<script>
+function b(a) {
+        (async () => {
     // create and show the notification
     const showNotification = () => {
         // create a new notification
@@ -62,10 +55,19 @@
 
     // show notification or error
     granted ? showNotification() : showError();
-
+    }
 })();
 
     </script>
+<body onmouseenter="b(1)">
+
+    <div class="container">
+        <h1>JavaScript Notification API Demo</h1>
+        
+        <div class="error"></div>
+    </div>
+
+    
 
 
 
